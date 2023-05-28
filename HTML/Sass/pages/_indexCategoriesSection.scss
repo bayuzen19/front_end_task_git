@@ -1,0 +1,72 @@
+/* Categories Section */
+
+.categories-container {
+        flex-wrap: wrap;
+        gap:50px 10px;
+
+        .card{
+            max-width: 500px;
+            min-width: 350px;
+            &-header{
+                background-color: var(--primary-color);
+                color: #fff;
+                display: flex;
+                justify-content: space-around;
+            }
+            ul il{
+                margin-left: 2rem;
+                font-weight: 700;
+                color: var(--primary-color);
+            }
+            &-title{
+                text-align: center;
+            }
+            i{
+                font-size: 3.5em;
+                border-radius: 10%;
+                box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.5);
+                padding: 0.5rem;
+                margin: .2rem 0;
+                transition: var(--transition);
+            }
+            i:hover{
+                background-color: white;
+                transition: var(--transition);
+                &.fa-html5{
+                    color: var(--html-color)
+                }
+                &.fa-css3{
+                    color: var(--css-color);
+                }
+                &.fa-js{
+                    color: var(--js-color);
+                }
+                &.fa-python{
+                    color: var(--python-color);
+                }
+                &.fa-java{
+                    color: var(--java-color);
+                }
+                &.fa-r-project{
+                    color: var(--r-color);
+                }
+                &.fa-react{
+                    color: var(--react-color);
+                }
+                &.fa-file-excel{
+                    color: var(--microsoft-excel-color);
+                }
+                &.fa-people-group{
+                    color: var(--microsoft-teams-color);
+                }
+                &.fa-database{
+                    color: var(--sql-color);
+                }
+            }
+            transition: var(--transition);
+            &:hover{
+                transform:translateY(-10px);
+                transition: var(--transition);
+            }
+        }
+    }

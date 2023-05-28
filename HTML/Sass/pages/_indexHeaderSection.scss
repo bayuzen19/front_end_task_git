@@ -1,0 +1,53 @@
+/* Header */
+
+.header {
+    height: 80vh;
+    &-img{
+        max-width: 600px;
+        min-width: 200px;
+        animation: left 1s ease-in-out;
+    }
+    &-content{
+        max-width: 550px;
+        animation: right 1s ease-in-out;
+    }
+    .btn{
+        padding: .75rem 1.25rem;
+    }
+    a.btn{
+        color: #eee;
+        margin-right: 1.5rem;
+    }
+    animation: fadeInHeader 1s ease-in-out;
+}
+
+@keyframes right{
+    0%{
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes left{
+    0%{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInHeader{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

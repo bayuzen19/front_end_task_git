@@ -1,0 +1,19 @@
+@import "settings";
+@import "variables";
+
+// Components
+@import "./components/nav";
+@import "./components/footer";
+@import "./components/form";
+
+// Pages
+
+@import "./pages/indexHeaderSection";
+@import "./pages/indexCategoriesSection";
+@import "./pages/indexOffersSection";
+@import "./pages/indexTestimonialSection";
+@import "./pages/welcome";
+
+
+// responsive
+@import "responsive";
